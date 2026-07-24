@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Count & Add</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!---HOME SCREEN -->
+<div id="homeScreen" class="screen">
+
+    <div class="hero">
+
+        <div class="logo">
+            Count & Add
+        </div>
+
+        <p class="tagline">
+            ✨ Fun Maths For Year 1 ✨
+        </p>
+
+        <button id="playBtn" class="main-btn">
+            ▶ Play
+        </button>
+
+    </div>
+
+</div>
+
+<!-- TASK SCREEN -->
+<div id="taskScreen" class="screen hidden"> 
+
+    <h1 class="title">
+        Choose a Game
+    </h1>
+
+    <div class="task-grid">
+
+        <div class="task-card" data-game="count">
+            <div class="task-icon">🔢</div>
+            <h2>Counting</h2>
+            <p>Count the objects</p>
+        </div>
+
+        <div class="task-card" data-game="addition">
+            <div class="task-icon">➕</div>
+            <h2>Addition</h2>
+            <p>Add the groups</p>
+        </div>
+
+        <div class="task-card" data-game="missing">
+            <div class="task-icon">❓</div>
+            <h2>Missing Numbers</h2>
+            <p>Find the missing number</p>
+        </div>
+
+        <div class="task-card" data-game="compare">
+            <div class="task-icon">🏆</div>
+            <h2>Bigger Number</h2>
+            <p>Choose the biggest</p>
+        </div>
+
+    </div>
+
+    <button id="backHomeBtn" class="small-btn"> 
+        ⬅ Home
+    </button>
+
+</div>
+
+<!-- GAME SCREEN -->
+<div id="gameScreen" class="screen hidden">
+
+    <div class="top-bar">
+
+        <div class="score-box">
+            ⭐ Score:
+            <span id="score">0</span>
+        </div>
+
+        <div class="score-box">
+            ❤️ Lives:
+            <span id="lives">3</span>
+        </div>
+
+    </div>
+
+    <h1 id="question" class="question"></h1>
+
+    <div id="visualArea" class="visual-area"></div>
+
+    <div id="answerArea" class="answer-area"></div>
+
+    <p id="feedback" class="feedback"></p>
+
+    <button id="nextBtn" class="main-btn hidden">
+        Next
+    </button>
+
+    <br>
+
+    <button id="menuBtn" class="small-btn">
+        ⬅ Menu
+    </button>
+
+</div>
+
+<!-- GAME OVER -->
+<div id="gameOverScreen" class="screen hidden">
+
+    <h1 class="title">
+        🎉 Great Job!
+    </h1>
+
+    <div class="final-score">
+        You scored
+        <span id="finalScore">0</span>
+        stars!
+    </div>
+
+    <br><br>
+
+    <button id="playAgainBtn" class="main-btn">
+        Play Again
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
